@@ -139,6 +139,18 @@ func TestFizzBu(t *testing.T) {
 		assert.Equal(t, output, expected)
 	})
 
+	t.Run("input 15 expected FizzBuzz", func(t *testing.T) {
+		// Arrange
+		expected := "FizzBuzz"
+		input := "15"
+
+		// Act
+		output := fizzBuzz(input)
+
+		// Assert
+		assert.Equal(t, output, expected)
+	})
+
 
 	
 
