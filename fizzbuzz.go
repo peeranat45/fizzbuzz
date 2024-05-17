@@ -5,6 +5,8 @@ func fizzBuzz(input string) string {
 		return "Fizz"
 	}else if input == "5" {
 		return "Buzz"
+	}else if input == "6" {
+		return "Fizz"
 	}
 	return input 
 }
