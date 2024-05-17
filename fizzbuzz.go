@@ -1,12 +1,21 @@
 package main
 
+import (
+	"fmt"
+	"log"
+	"strconv"
+)
+
 func fizzBuzz(input string) string {
-	if input == "3" {
+
+	inputInt , err := strconv.Atoi(input)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if  inputInt%3 == 0 {
 		return "Fizz"
 	}else if input == "5" {
 		return "Buzz"
-	}else if input == "6" {
-		return "Fizz"
 	}
-	return input 
+	return fmt.Sprintf(input)
 }
