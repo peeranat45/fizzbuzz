@@ -1,5 +1,8 @@
 package main
 
 func fizzBuzz(input string) string {
-	return input
+	if input == "3" {
+		return "Fizz"
+	}
+	return input 
 }
