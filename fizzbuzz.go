@@ -14,7 +14,7 @@ func fizzBuzz(input string) string {
 	}
 	if  inputInt%3 == 0 {
 		return "Fizz"
-	}else if input == "5" {
+	}else if inputInt%5 == 0 {
 		return "Buzz"
 	}
 	return fmt.Sprintf(input)
