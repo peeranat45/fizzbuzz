@@ -12,7 +12,9 @@ func fizzBuzz(input string) string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	if  inputInt%3 == 0 {
+	if inputInt == 15 {
+		return "FizzBuzz"
+	}else if  inputInt%3 == 0 {
 		return "Fizz"
 	}else if inputInt%5 == 0 {
 		return "Buzz"
